@@ -1,24 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LDJ-ac-JmR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="Ib4-TG-hn1">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="LDJ-ac-JmR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qmf-Pe-iJ5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Oyl-Qq-IoM" kind="relationship" relationship="rootViewController" id="4KA-oL-mNL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3gC-gR-rfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="-655"/>
+        </scene>
+        <!--网易新闻-->
+        <scene sceneID="TDi-cb-xr7">
+            <objects>
+                <viewController id="Oyl-Qq-IoM" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ma2-3K-zTu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPy-uf-SCX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PRY-lo-FFc"/>
+                                </constraints>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cP3-8Z-zPa">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cP3-8Z-zPa" firstAttribute="top" secondItem="qPy-uf-SCX" secondAttribute="bottom" id="AwY-1S-GWk"/>
+                            <constraint firstItem="qPy-uf-SCX" firstAttribute="leading" secondItem="NPD-Er-JNj" secondAttribute="leading" id="Dxj-ph-c33"/>
+                            <constraint firstItem="NPD-Er-JNj" firstAttribute="trailing" secondItem="qPy-uf-SCX" secondAttribute="trailing" id="XEd-Pc-LVs"/>
+                            <constraint firstItem="NPD-Er-JNj" firstAttribute="bottom" secondItem="cP3-8Z-zPa" secondAttribute="bottom" id="b2A-tz-qeP"/>
+                            <constraint firstItem="NPD-Er-JNj" firstAttribute="trailing" secondItem="cP3-8Z-zPa" secondAttribute="trailing" id="bjt-Hg-xHH"/>
+                            <constraint firstItem="qPy-uf-SCX" firstAttribute="top" secondItem="NPD-Er-JNj" secondAttribute="top" id="fwm-0u-7Ly"/>
+                            <constraint firstItem="cP3-8Z-zPa" firstAttribute="leading" secondItem="NPD-Er-JNj" secondAttribute="leading" id="gYb-A9-za1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NPD-Er-JNj"/>
                     </view>
+                    <navigationItem key="navigationItem" title="网易新闻" id="tAT-lK-4YY"/>
+                    <connections>
+                        <outlet property="downScrollView" destination="cP3-8Z-zPa" id="VTW-aW-Rw9"/>
+                        <outlet property="upScrollView" destination="qPy-uf-SCX" id="B2U-yJ-Vho"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUt-AT-bI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="951" y="-677"/>
         </scene>
     </scenes>
 </document>

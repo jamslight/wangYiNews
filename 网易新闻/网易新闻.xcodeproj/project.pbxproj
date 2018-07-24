@@ -15,6 +15,12 @@
 		4B331DEB210763E200A6CE18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331DEA210763E200A6CE18 /* main.m */; };
 		4B331DF5210763E300A6CE18 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331DF4210763E300A6CE18 /* ____Tests.m */; };
 		4B331E00210763E300A6CE18 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331DFF210763E300A6CE18 /* ____UITests.m */; };
+		4B331E112107667800A6CE18 /* HotNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331E102107667800A6CE18 /* HotNewsViewController.m */; };
+		4B331E142107668F00A6CE18 /* FirstNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331E132107668F00A6CE18 /* FirstNewsViewController.m */; };
+		4B331E172107669C00A6CE18 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331E162107669C00A6CE18 /* VideoViewController.m */; };
+		4B331E1A210766A800A6CE18 /* SocietyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331E19210766A800A6CE18 /* SocietyViewController.m */; };
+		4B331E1D210766B500A6CE18 /* ReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331E1C210766B500A6CE18 /* ReadViewController.m */; };
+		4B331E20210766C500A6CE18 /* ScienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331E1F210766C500A6CE18 /* ScienceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		4B331DFB210763E300A6CE18 /* 网易新闻UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易新闻UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B331DFF210763E300A6CE18 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		4B331E01210763E300A6CE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B331E0F2107667800A6CE18 /* HotNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotNewsViewController.h; sourceTree = "<group>"; };
+		4B331E102107667800A6CE18 /* HotNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotNewsViewController.m; sourceTree = "<group>"; };
+		4B331E122107668F00A6CE18 /* FirstNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstNewsViewController.h; sourceTree = "<group>"; };
+		4B331E132107668F00A6CE18 /* FirstNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstNewsViewController.m; sourceTree = "<group>"; };
+		4B331E152107669C00A6CE18 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		4B331E162107669C00A6CE18 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		4B331E18210766A800A6CE18 /* SocietyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocietyViewController.h; sourceTree = "<group>"; };
+		4B331E19210766A800A6CE18 /* SocietyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocietyViewController.m; sourceTree = "<group>"; };
+		4B331E1B210766B500A6CE18 /* ReadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadViewController.h; sourceTree = "<group>"; };
+		4B331E1C210766B500A6CE18 /* ReadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadViewController.m; sourceTree = "<group>"; };
+		4B331E1E210766C500A6CE18 /* ScienceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScienceViewController.h; sourceTree = "<group>"; };
+		4B331E1F210766C500A6CE18 /* ScienceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScienceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,7 @@
 		4B331DDA210763DF00A6CE18 /* 网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				4B331E0E2107665C00A6CE18 /* ChildVc(子控制器) */,
 				4B331DDB210763DF00A6CE18 /* AppDelegate.h */,
 				4B331DDC210763DF00A6CE18 /* AppDelegate.m */,
 				4B331DDE210763DF00A6CE18 /* ViewController.h */,
@@ -130,6 +149,25 @@
 				4B331E01210763E300A6CE18 /* Info.plist */,
 			);
 			path = "网易新闻UITests";
+			sourceTree = "<group>";
+		};
+		4B331E0E2107665C00A6CE18 /* ChildVc(子控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				4B331E0F2107667800A6CE18 /* HotNewsViewController.h */,
+				4B331E102107667800A6CE18 /* HotNewsViewController.m */,
+				4B331E122107668F00A6CE18 /* FirstNewsViewController.h */,
+				4B331E132107668F00A6CE18 /* FirstNewsViewController.m */,
+				4B331E152107669C00A6CE18 /* VideoViewController.h */,
+				4B331E162107669C00A6CE18 /* VideoViewController.m */,
+				4B331E18210766A800A6CE18 /* SocietyViewController.h */,
+				4B331E19210766A800A6CE18 /* SocietyViewController.m */,
+				4B331E1B210766B500A6CE18 /* ReadViewController.h */,
+				4B331E1C210766B500A6CE18 /* ReadViewController.m */,
+				4B331E1E210766C500A6CE18 /* ScienceViewController.h */,
+				4B331E1F210766C500A6CE18 /* ScienceViewController.m */,
+			);
+			path = "ChildVc(子控制器)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B331DE0210763DF00A6CE18 /* ViewController.m in Sources */,
+				4B331E112107667800A6CE18 /* HotNewsViewController.m in Sources */,
+				4B331E1D210766B500A6CE18 /* ReadViewController.m in Sources */,
+				4B331E172107669C00A6CE18 /* VideoViewController.m in Sources */,
+				4B331E20210766C500A6CE18 /* ScienceViewController.m in Sources */,
 				4B331DEB210763E200A6CE18 /* main.m in Sources */,
 				4B331DDD210763DF00A6CE18 /* AppDelegate.m in Sources */,
+				4B331E1A210766A800A6CE18 /* SocietyViewController.m in Sources */,
+				4B331E142107668F00A6CE18 /* FirstNewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
